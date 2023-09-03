@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"> 动物园图像识别</string>
+    <string name="icon"></string>
+    <string name="tv_description">请用户拍照一张照片或从相册选择一张照片来进行识别！</string>
+    <string name="btn_camera">拍照</string>
+    <string name="btn_send">识别</string>
+    <string name="btn_upload">相册</string>
+    <string name="class_name">动物类:</string>
+    <string name="class_acc"> 准确度:</string>
+    <string name="class_link"> 百度知识</string>
+</resources>

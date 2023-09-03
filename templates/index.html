@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>主页</title>
+        <meta name="keywords" content="custom file input, styling, label, cross-browser, accessible, input type file" />
+		
+		<style>
+			.content {
+			  max-width: 500px;
+			  margin: auto;
+			  }
+			.bg-img{
+				width: 100%;
+				height: 100vh;
+				background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('static/css/background.jpg');
+				background-size: cover;
+				background-position: center;
+			}
+		</style>
+    </head>
+
+    <body>
+	<div class="bg-img">
+	<div class="content">
+        <div class = "index-main">
+            <div style = "width : 100%; padding-top : 5%;">
+                <div class = "header-content">
+                     <h1 style = "text-align: center;color: white">
+                         <span class="header-content-text">动物园动物识别</span>
+                     </h1>
+                </div>
+            </div>
+
+            <div class="upload-section">
+                <div class="upload-file">
+                    <form class = "file-form" action="/success" method="post", enctype="multipart/form-data">
+                        <input class="file-form-input" type="file", name = "file"/>
+                        <button class="btn btn-success btn-lg">识别</button>
+                    </form>
+                </div>
+                <div class = "header-content-sub">
+                        <p style = "text-align: left; margin-top: 15px;color: red" class="header-content-info">{{error}}</p>
+                </div>
+            </div>
+
+            <div class = "footer">
+                <div class = "header-content-sub">
+                        <p style = "text-align: left; color: white" class="header-content-info">
+                            只能分别以下的各类动物：
+                        </p>
+                </div>
+                <table border="0" width="500" height="100" style = "color: orange" class="header-content-info">
+                        <tr align="center">
+                            <td width="50%"> 熊<sup>(1)</sup> </td>
+                            <td width="50%"> 鹿科<sup>(2)</sup> </td>
+                        </tr >
+                        <tr align="center">
+                            <td> 大象<sup>(3)</sup> </td>
+                            <td> 红鹳<sup>(4)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 狐<sup>(5)</sup> </td>
+                            <td> 大猩猩<sup>(6)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 河马<sup>(7)</sup> </td>
+                            <td> 马<sup>(8)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 鬣狗<sup>(9)</sup> </td>
+                            <td> 袋鼠<sup>(10)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 树袋熊<sup>(11)</sup> </td>
+                            <td> 花豹<sup>(12)</sup>  </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 狮子<sup>(13)</sup>   </td>
+                            <td> 霍加狓<sup>(14)</sup>   </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 婆罗洲猩猩<sup>(15)</sup> </td>
+                            <td> 大熊猫<sup>(16)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 鹈形目<sup>(17)</sup> </td>
+                            <td> 企鹅<sup>(18)</sup> </td>
+                        </tr>
+
+                        <tr align="center">
+                            <td> 浣熊<sup>(19)</sup> </td>
+                            <td> 驯鹿<sup>(20)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 印度犀<sup>(21)</sup>  </td>
+                            <td> 虎<sup>(22)</sup> </td>
+                        </tr>
+                        <tr align="center">
+                            <td> 斑马<sup>(23)</sup> </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+	</div>			 
+	</div>	 
+    </body>
+</html>
