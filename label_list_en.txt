@@ -20,7 +20,4 @@ raccoon
 reindeer		
 rhinoceros		
 tiger		
-zebra		
-
-
-            
+zebra
