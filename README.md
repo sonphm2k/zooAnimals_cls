@@ -9,8 +9,10 @@
 ![alt-text-1](templates/readme_img/dataset.png)
 
 ## Web
-<img src="templates/readme_img/web1.png" alt="alt text" width="350" height="400"/>
-<img src="templates/readme_img/web2.png" alt="alt text" width="400" height="400"/>
+<p float="left">
+  <img src="templates/readme_img/web1.png" width="50%" />
+  <img src="templates/readme_img/web2.png" width="50%" />
+</p>
 
 ## Android
 <img src="templates/readme_img/android1.png" alt="alt text" width="350" height="500"/>
