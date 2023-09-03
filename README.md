@@ -14,18 +14,9 @@
   <img src="templates/readme_img/web2.png" width="50%" />
 </p>
 
-<img class=mobile-image src="templates/readme_img/web1.png" />
-<img class=mobile-image src="templates/readme_img/web2.png" />
-
-<style>
-  .img {
-    display: inline-block;
-  }
-  img.mobile-image {
-	width: 49%;
-    display: inline-block;
-  }
-</style>
+| Web               	 | Web Result             |
+| ---------------------- | ---------------------- |
+| ![web](templates/readme_img/web1.png) | ![result](templates/readme_img/web2.png) |
 
 ## Android
 <img src="templates/readme_img/android1.png" alt="alt text" width="350" height="500"/>
